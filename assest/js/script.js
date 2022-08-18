@@ -1,4 +1,4 @@
-const carousel = document.querySelector(".carousel")
+const carousel = document.querySelector(".carousel-banner")
 const quantidadeDeBanners = 6
 
 function createImages(quantidadeDeBanners) {
@@ -6,8 +6,8 @@ function createImages(quantidadeDeBanners) {
 
     do {
         let image = document.createElement('img')
-        image.src = `assest/image/banner/image-${quantidadeDeBanners}.jpg`
-        image.classList.add("header-image")
+        image.src = `assest/image/bg-banner/image-${quantidadeDeBanners}.jpg`
+        image.classList.add("image-banner")
         images.push(image)
         quantidadeDeBanners = quantidadeDeBanners - 1
     } while (quantidadeDeBanners >= 1);
@@ -19,7 +19,7 @@ function loadCarousel() {
 
     let images = createImages(quantidadeDeBanners)
 
-    images[0].classList.add("is-active")
+    images[0].classList.add("is-showing")
 
     images.forEach(image => {
         carousel.appendChild(image)
@@ -36,8 +36,8 @@ function loadCarousel() {
         }
 
         console.log(i)
-        carousel.querySelector('.is-active').classList.remove('is-active')
-        carousel.children[i].classList.add("is-active")
+        carousel.querySelector('.is-showing').classList.remove('is-showing')
+        carousel.children[i].classList.add("is-showing")
 
     }, 7000);
 }

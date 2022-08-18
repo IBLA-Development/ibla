@@ -1,3 +1,5 @@
+/* === HEADER === */
+
 .navbar {
     height: 5vh;
     padding: 1rem 2rem;
@@ -6,6 +8,9 @@
     justify-content: space-between;
     z-index: 99;
 }
+
+
+/* === HEADER === */
 
 .main-container {
     height: 95vh;
@@ -17,7 +22,10 @@
     position: fixed;
 }
 
-.header-parallax {
+
+/* === PARALLAX BANNER === */
+
+.parallax-banner {
     z-index: -1;
     height: 95vh;
     justify-content: center;
@@ -26,7 +34,12 @@
     background-color: #000000;
 }
 
-.header-image {
+.content-banner p {
+    position: relative;
+    color: white;
+}
+
+.image-banner {
     position: absolute;
     height: 100vh;
     object-fit: cover;
@@ -34,28 +47,17 @@
     transition: opacity 3s ease-in-out;
 }
 
-.is-active {
+.is-showing {
     opacity: 1;
 }
 
-.header-content p {
-    position: relative;
-    color: white;
-}
 
-.bg-parallax-heading-image-1 {
-    background-image: url("https://www.boladeneve.com/images/image-20-1.jpg");
-}
+/* === PARALLAX BANNER === */
 
-.bg-parallax-heading-image-2 {
-    background-image: url("https://www.boladeneve.com/images/image-20-2.jpg");
-}
 
-.bg-parallax-heading-image-3 {
-    background-image: url("https://www.boladeneve.com/images/image-20-3.jpg");
-}
+/* === SECTION PARALLAX CONTENT === */
 
-.content-parallax {
+.parallax-container {
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -64,7 +66,7 @@
     z-index: 0;
 }
 
-.content-parallax::before {
+.parallax-container::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -74,11 +76,28 @@
     z-index: -1;
 }
 
+.bg-parallax-1 {
+    background-image: url("assest/image/bg-parallax/image-3.jpg");
+}
+
+.bg-parallax-2 {
+    background-image: url("assest/image/bg-parallax/image-5.jpg");
+}
+
+
+/* === SECTION PARALLAX CONTENT === */
+
+
+/* === SECTION CONTENT === */
+
 .content-container {
     position: relative;
     display: block;
     background-color: rgba(0, 0, 0, 1);
 }
+
+
+/* === SECTION CONTENT === */
 
 .content {
     max-width: 800px;
@@ -93,22 +112,14 @@
     color: white;
 }
 
-.content-is-mid {
+.is-mid-height {
     min-height: 50vh;
 }
 
-.content-is-big {
+.is-full-height {
     min-height: 100vh;
 }
 
 .bg-parallax-content {
     background-image: url("/assest/image/grey-bg-1500x1000.jpg");
-}
-
-.bg-parallax-1 {
-    background-image: url("https://www.boladeneve.com/images/image-20-3.jpg");
-}
-
-.bg-parallax-2 {
-    background-image: url("https://www.boladeneve.com/images/image-20-5.jpg");
 }
