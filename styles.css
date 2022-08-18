@@ -47,6 +47,23 @@
     transition: opacity 3s ease-in-out;
 }
 
+.carousel-banner {
+    z-index: 0;
+}
+
+.carousel-banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.carousel-banner img {
+    z-index: -1;
+}
+
 .is-showing {
     opacity: 1;
 }
@@ -99,6 +116,23 @@
 
 /* === SECTION CONTENT === */
 
+
+/* === CONTAINER SIZES === */
+
+.is-mid-height {
+    min-height: 50vh;
+}
+
+.is-full-height {
+    min-height: 100vh;
+}
+
+
+/* === CONTAINER SIZES === */
+
+
+/* === CONTENT === */
+
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -112,14 +146,5 @@
     color: white;
 }
 
-.is-mid-height {
-    min-height: 50vh;
-}
 
-.is-full-height {
-    min-height: 100vh;
-}
-
-.bg-parallax-content {
-    background-image: url("/assest/image/grey-bg-1500x1000.jpg");
-}
+/* === CONTENT === */
