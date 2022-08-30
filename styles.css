@@ -2,6 +2,8 @@
 html {
     font-family: 'Inter', sans-serif;
     font-weight: var(--font-weight-regular);
+    line-height: 1.6;
+    letter-spacing: 1px;
 }
 
 :root {
@@ -45,7 +47,7 @@ html {
 }
 
 .logo-ibla {
-    width: 7rem;
+    width: 10vh;
 }
 
 .burger {
