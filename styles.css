@@ -170,11 +170,6 @@ html {
     background-color: var(--bg-black);
 }
 
-.content-banner p {
-    position: relative;
-    color: white;
-}
-
 .image-banner {
     position: absolute;
     height: 100vh;
@@ -202,6 +197,28 @@ html {
 
 .is-showing {
     opacity: 1;
+}
+
+.logo-banner p {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.logo-banner img {
+    position: relative;
+    width: 40em;
+}
+
+.logo-banner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 75px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-around;
 }
 
 
