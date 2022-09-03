@@ -1,0 +1,79 @@
+.c-logo-ibla {
+    width: 10vh;
+}
+
+.c-burger {
+    display: none;
+}
+
+.c-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.c-navbar .list {
+    height: 100%;
+    display: flex;
+}
+
+.c-navbar .item {
+    padding: 0em 1em;
+}
+
+.c-navbar .link {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: var(--font-weight-extra);
+    color: var(--color-primary);
+    box-shadow: 0 0 0 0 var(--color-secondary) inset;
+    transition: box-shadow var(--transition-duration-exit) var(--transition-function-elastic);
+}
+
+.c-navbar .link:hover {
+    color: var(--color-secondary);
+    box-shadow: 0 -5px 0 0 var(--color-secondary) inset;
+}
+
+.c-social-media {
+    display: flex;
+    align-items: center;
+}
+
+.c-social-logo {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-social-logo .facebook {
+    fill: var(--color-social-media-facebook)
+}
+
+.c-social-logo .instagram {
+    fill: var(--color-social-media-instagram)
+}
+
+.c-social-logo .youtube {
+    fill: var(--color-social-media-youtube)
+}
+
+brightness- .c-social-logo .facebook:hover {
+    filter: var(--color-social-media-brightness-hover);
+}
+
+.c-social-logo .instagram:hover {
+    filter: var(--color-social-media-brightness-hover);
+}
+
+.c-social-logo .youtube:hover {
+    filter: var(--color-social-media-brightness-hover);
+}

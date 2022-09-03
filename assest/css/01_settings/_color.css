@@ -1,0 +1,27 @@
+:root {
+    /*Standard Colors*/
+    --color-primary: #000;
+    --color-secondary: #AC2222;
+    --color-tertiary: #FFFFFF;
+    /*Colors */
+    --color-black: var(--color-primary);
+    --color-red: var(--color-secondary);
+    --color-white: var(--color-tertiary);
+    /*Grayscale */
+    --color-grey-1: #F3F3F3;
+    --color-grey-2: #D9D9D9;
+    /*Backgroung Colors */
+    --color-bg-primary: var(--color-primary);
+    --color-bg-secondary: var(--color-tertiary);
+    /*Social Media */
+    --color-social-media-facebook: hsl(221 44% 41%);
+    --color-social-media-twitter: hsl(196 100% 46%);
+    --color-social-media-linkedin: hsl(201 100% 35%);
+    --color-social-media-youtube: hsl(0 74% 46%);
+    --color-social-media-instagram: hsl(349 75% 57%);
+    --color-social-media-github: hsl(0 0% 20%);
+    --color-social-media-brightness-hover: brightness(0.8);
+    /*Text Color */
+    --color-text-primary: var(--color-tertiary);
+    --color-text-secondary: var(--color-primary);
+}
