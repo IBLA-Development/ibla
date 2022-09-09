@@ -1,0 +1,9 @@
+.l-main {
+    height: 90vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: fixed;
+}

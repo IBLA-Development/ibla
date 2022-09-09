@@ -4,7 +4,7 @@ body {
     line-height: var(--line-height-default);
     letter-spacing: var(--letter-spacing-default);
     font-weight: var(--font-weight-default);
-    color: var(--color-text-primary);
+    color: var(--color-text-tertiary);
 }
 
 p,

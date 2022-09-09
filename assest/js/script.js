@@ -44,8 +44,8 @@ function loadCarousel() {
 
 loadCarousel()
 
-const menuBurger = document.querySelector(".burger")
+const menuBurger = document.querySelector(".js-burger")
 menuBurger.addEventListener('click', () => {
-    const menu = document.querySelector(".content-menu")
+    const menu = document.querySelector(".js-menu")
     menu.classList.toggle("is-open")
 })
