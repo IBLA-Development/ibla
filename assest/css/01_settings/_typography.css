@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+:root {
+    /*Font Sizes - Scale Step*/
+    /* @link https://utopia.fyi/type/calculator?c=640,15,1.2,1440,21,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+    --step--2: clamp(0.65rem, calc(0.63rem + 0.12vw), 0.74rem);
+    --step--1: clamp(0.78rem, calc(0.74rem + 0.27vw), 0.98rem);
+    --step-0: clamp(0.94rem, calc(0.86rem + 0.50vw), 1.31rem);
+    --step-1: clamp(1.13rem, calc(1.00rem + 0.83vw), 1.75rem);
+    --step-2: clamp(1.35rem, calc(1.15rem + 1.31vw), 2.33rem);
+    --step-3: clamp(1.62rem, calc(1.32rem + 1.99vw), 3.11rem);
+    --step-4: clamp(1.94rem, calc(1.50rem + 2.93vw), 4.14rem);
+    --step-5: clamp(2.33rem, calc(1.69rem + 4.26vw), 5.52rem);
+    /*Standard Font*/
+    --font-size-default: var(--step-0);
+    /* line-height : Altura entre as linhas */
+    --line-height-default: 1.6;
+    /* letter-spacing : Espaçamento entre da letras */
+    --letter-spacing-default: 1px;
+    /*Font Weight*/
+    --font-weight-light: 300;
+    --font-weight-default: 400;
+    --font-weight-bold: 600;
+    --font-weight-extra: 800;
+    /*@see https://systemfontstack.com/*/
+    --font-family-sans-serif: -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif;
+    --font-family-serif: times new roman, droid serif, times, source serif pro, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    --font-family-mono: menlo, consolas, monaco, liberation mono, lucida console, monospace;
+    --font-family-default: "Inter", var(--font-family-sans-serif);
+}
