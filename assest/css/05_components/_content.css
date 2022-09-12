@@ -4,6 +4,7 @@
     padding: 75px 25px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     z-index: 1;
 }
 
