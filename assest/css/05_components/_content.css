@@ -1,5 +1,5 @@
 .c-content {
-    max-width: 800px;
+    max-width: var(--is-medium);
     margin: 0 auto;
     padding: 75px 25px;
     display: flex;
@@ -7,18 +7,14 @@
     z-index: 1;
 }
 
-.c-content p {
-    color: white;
-}
-
-.c-content.c-content--mid-height {
+.c-content.-medium {
     min-height: 50vh;
 }
 
-.c-content.c-content--big-height {
+.c-content.-large {
     min-height: 75vh;
 }
 
-.c-content.c-content--full-height {
+.c-content.-full {
     min-height: 100vh;
 }
