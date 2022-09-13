@@ -1,11 +1,35 @@
-.c-content {
-    max-width: var(--is-medium);
-    margin: 0 auto;
-    padding: 75px 25px;
-    display: flex;
+.c-container,
+.c-content,
+.c-box {
     align-items: center;
+    display: flex;
     flex-direction: column;
-    z-index: 1;
+    margin: 0 auto;
+}
+
+.c-container {
+    padding: 75px 25px;
+    max-width: var(--is-medium);
+}
+
+.c-content {
+    flex-wrap: wrap;
+}
+
+.c-content.-horizontal {
+    flex-direction: row;
+}
+
+.c-box {
+    text-align: center;
+    margin: var(--space-xs);
+    padding: 75px 25px;
+    border-radius: var(--radius-large);
+    border: 1px solid var(--color-white);
+}
+
+.c-content.-item {
+    padding: 0;
 }
 
 .c-content.-medium {
