@@ -1,2 +1,6 @@
-@import "_header.css";
+@import "_navbar.css";
 @import "_content.css";
+@import "_typography.css";
+@import "_figure.css";
+@import "_card.css";
+@import "_buttons.css";

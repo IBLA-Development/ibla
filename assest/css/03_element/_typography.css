@@ -25,20 +25,21 @@ h4,
 h5,
 h6 {
     font-family: var(--font-family-default);
+    font-weight: var(--font-weight-bold);
 }
 
 h1 {
-    font-size: var(--font-step-5);
+    font-size: var(--step-5);
 }
 
 h2 {
-    font-size: var(--font-step-4);
+    font-size: var(--step-4);
 }
 
 h3 {
-    font-size: var(--font-step-3);
+    font-size: var(--step-3);
 }
 
 h4 {
-    font-size: var(--font-step-2);
+    font-size: var(--step-2);
 }

@@ -14,16 +14,16 @@
     padding: 0rem 2rem 0rem 2rem;
 }
 
-.c-navbar .c-navbar__list {
+.c-navbar__list {
     height: 100%;
     display: flex;
 }
 
-.c-navbar .c-navbar__item {
+.c-navbar__item {
     padding: 0em 1em;
 }
 
-.c-navbar .c-navbar__link {
+.c-navbar__link {
     height: 100%;
     text-decoration: none;
     display: flex;
@@ -35,7 +35,7 @@
     transition: box-shadow var(--transition-duration-exit) var(--transition-function-elastic);
 }
 
-.c-navbar .c-navbar__link:hover {
+.c-navbar__link:hover {
     color: var(--color-secondary);
     box-shadow: 0 -5px 0 0 var(--color-secondary) inset;
 }
@@ -54,27 +54,27 @@
     justify-content: center;
 }
 
-.c-social-logo .c-social-logo__facebook {
+.c-social-logo__facebook {
     fill: var(--color-social-media-facebook)
 }
 
-.c-social-logo .c-social-logo__instagram {
+.c-social-logo__instagram {
     fill: var(--color-social-media-instagram)
 }
 
-.c-social-logo .c-social-logo__youtube {
+.c-social-logo__youtube {
     fill: var(--color-social-media-youtube)
 }
 
-.c-social-logo .c-social-logo__facebook:hover {
+.c-social-logo__facebook:hover {
     filter: var(--color-social-media-brightness-hover);
 }
 
-.c-social-logo .c-social-logo__instagram:hover {
+.c-social-logo__instagram:hover {
     filter: var(--color-social-media-brightness-hover);
 }
 
-.c-social-logo .c-social-logo__youtube:hover {
+.c-social-logo__youtube:hover {
     filter: var(--color-social-media-brightness-hover);
 }
 
@@ -84,7 +84,7 @@
         margin: 0 1em;
         font-size: 1.5em;
     }
-    .c-burger .c-burger__icon {
+    .c-burger__icon {
         color: var(--color-black);
     }
     .c-menu {
@@ -99,10 +99,10 @@
         transition: left 1s ease-in-out;
         overflow: auto;
     }
-    .c-navbar .c-navbar__list {
+    .c-navbar__list {
         flex-direction: column;
     }
-    .c-navbar .c-navbar__link {
+    .c-navbar__link {
         padding: 1rem 0;
         text-align: center;
     }

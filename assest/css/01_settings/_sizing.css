@@ -26,4 +26,5 @@
     --radius-small: 3px;
     --radius-medium: var(--radius-default);
     --radius-large: 9px;
+    --radius-extra-large: 18px;
 }

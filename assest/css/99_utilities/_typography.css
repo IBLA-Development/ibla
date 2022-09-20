@@ -1,0 +1,11 @@
+.u-text-center {
+    text-align: center;
+}
+
+.u-font-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.u-font-extra {
+    font-weight: var(--font-weight-extra);
+}
