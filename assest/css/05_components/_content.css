@@ -1,16 +1,23 @@
-.c-container,
+.c-section-container,
 .c-content,
 .c-box {
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
 }
 
-.c-container {
-    padding: 75px 25px;
+
+/*c-section-container*/
+
+.c-section-container {
     max-width: var(--is-medium);
+    padding: 75px 25px;
 }
+
+
+/*c-content*/
 
 .c-content {
     flex-wrap: wrap;
@@ -20,26 +27,13 @@
     flex-direction: row;
 }
 
+
+/*c-box*/
+
 .c-box {
-    text-align: center;
-    margin: var(--space-xs);
-    padding: 75px 25px;
     border-radius: var(--radius-large);
     border: 1px solid var(--color-white);
-}
-
-.c-content.-item {
-    padding: 0;
-}
-
-.c-content.-medium {
-    min-height: 50vh;
-}
-
-.c-content.-large {
-    min-height: 75vh;
-}
-
-.c-content.-full {
-    min-height: 100vh;
+    margin: var(--space-xs);
+    padding: 75px 25px;
+    text-align: center;
 }
