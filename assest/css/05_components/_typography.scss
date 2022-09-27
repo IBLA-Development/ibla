@@ -1,0 +1,65 @@
+%title {
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-bold);
+}
+
+.title {
+    @extend %title;
+    font-size: var(--step-5);
+    &-1 {
+        @extend .title;
+    }
+    &-2 {
+        @extend %title;
+        font-size: var(--step-4);
+    }
+    &-3 {
+        @extend %title;
+        font-size: var(--step-3);
+    }
+    &-4 {
+        @extend %title;
+        font-size: var(--step-2);
+    }
+    &-5 {
+        @extend %title;
+        font-size: var(--step-1);
+    }
+    &-6 {
+        @extend %title;
+        font-size: var(--step-0);
+    }
+}
+
+%subtitle {
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-default);
+}
+
+.subtitle {
+    @extend %subtitle;
+    font-size: var(--step-0);
+    &-1 {
+        @extend %subtitle;
+        font-size: var(--step-3);
+    }
+    &-2 {
+        @extend %subtitle;
+        font-size: var(--step-2);
+    }
+    &-3 {
+        @extend %subtitle;
+        font-size: var(--step-1);
+    }
+    &-4 {
+        @extend .subtitle;
+    }
+    &-5 {
+        @extend %subtitle;
+        font-size: var(--step--1);
+    }
+    &-6 {
+        @extend %subtitle;
+        font-size: var(--step--2);
+    }
+}

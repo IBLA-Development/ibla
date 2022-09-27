@@ -1,0 +1,115 @@
+.c-logo-ibla {
+    width: 10vh;
+}
+
+.c-burger {
+    display: none;
+    @media screen and (max-width: 1023px) {
+        & {
+            display: block;
+            margin: 0 1em;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.c-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+    @media screen and (max-width: 1023px) {
+        & {
+            background-color: var(--color-bg-tertiary);
+            z-index: 1;
+            position: fixed;
+            top: 10vh;
+            height: 90vh;
+            left: 100%;
+            flex-direction: column;
+            font-size: x-large;
+            transition: left 1s ease-in-out;
+            overflow: auto;
+        }
+    }
+}
+
+.c-navbar {
+    &__list {
+        height: 100%;
+        display: flex;
+        @media screen and (max-width: 1023px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+    &__item {
+        padding: 0em 1em;
+    }
+    &__link {
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: var(--font-weight-extra);
+        color: var(--color-primary);
+        box-shadow: 0 0 0 0 var(--color-secondary) inset;
+        transition: box-shadow var(--transition-duration-exit) var(--transition-function-elastic);
+        &:hover {
+            color: var(--color-secondary);
+            box-shadow: 0 -5px 0 0 var(--color-secondary) inset;
+        }
+        @media screen and (max-width: 1023px) {
+            padding: 1rem 0;
+            text-align: center;
+        }
+    }
+}
+
+.c-social-media {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1023px) {
+        padding: 2rem 0 2rem 0;
+        justify-content: space-around;
+    }
+}
+
+.c-social-logo {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__facebook {
+        fill: var(--color-social-media-facebook);
+        &:hover {
+            filter: var(--color-social-media-brightness-hover);
+        }
+    }
+    &__instagram {
+        fill: var(--color-social-media-instagram);
+        &:hover {
+            filter: var(--color-social-media-brightness-hover);
+        }
+    }
+    &__youtube {
+        fill: var(--color-social-media-youtube);
+        &:hover {
+            filter: var(--color-social-media-brightness-hover);
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .c-burger__icon {
+        color: var(--color-black);
+    }
+    .c-logo-midia {
+        width: 3rem;
+    }
+}

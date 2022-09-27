@@ -1,0 +1,18 @@
+.c-button {
+    // margin: 10px;
+    border-radius: var(--radius-extra-large);
+    font-size: var(--step--1);
+    font-weight: var(--font-weight-bold);
+    padding: 5px 15px 5px 15px;
+    &:hover {
+        cursor: pointer;
+    }
+    &.-large {
+        padding: 5px 135px;
+    }
+    @media screen and (max-width: 1023px) {
+        &.-large {
+            padding: 5px 50px;
+        }
+    }
+}
