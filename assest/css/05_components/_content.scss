@@ -1,4 +1,4 @@
-%container {
+%content {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -6,14 +6,8 @@
     margin: 0 auto;
 }
 
-.c-section-container {
-    @extend %container;
-    max-width: var(--is-medium);
-    padding: 75px 25px;
-}
-
 .c-content {
-    @extend %container;
+    @extend %content;
     flex-wrap: wrap;
     &.-horizontal {
         flex-direction: row;
@@ -21,7 +15,7 @@
 }
 
 .c-box {
-    @extend %container;
+    @extend %content;
     border-radius: var(--radius-large);
     border: 1px solid var(--color-white);
     margin: var(--space-xs);
