@@ -1,0 +1,12 @@
+.c-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: var(--radius-large);
+    border: 1px solid var(--color-white);
+    margin: var(--space-xs);
+    padding: 75px 25px;
+    text-align: center;
+}
