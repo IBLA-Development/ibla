@@ -1,10 +1,14 @@
-.c-section-container {
+%c-section {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 75px 25px;
+}
+
+.c-section-container {
+    @extend %c-section;
+    padding: 75px 0;
     &.-w {
         &-medium {
             max-width: var(--is-medium);
