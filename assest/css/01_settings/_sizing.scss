@@ -20,11 +20,15 @@
     --space-2xl-3xl: clamp(4.5rem, calc(0.9rem + 9vw), 9rem);
     /* Custom pairs */
     --space-s-l: clamp(1.13rem, calc(-0.37rem + 3.75vw), 3rem);
-    /*
-    Radius*/
+    /*Radius*/
     --radius-default: 6px;
     --radius-small: 3px;
     --radius-medium: var(--radius-default);
     --radius-large: 9px;
     --radius-extra-large: 18px;
+    /*vh*/
+    --vh-small: 25vh;
+    --vh-medium: 50vh;
+    --vh-large: 75vh;
+    --vh-full: 100vh;
 }
