@@ -1,0 +1,11 @@
+.c-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    &.-horizontal {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,18 @@
+%c-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.c-section-container {
+    @extend %c-section;
+    padding-bottom: var(--space-2xl);
+    padding-top: var(--space-2xl);
+    &.-w {
+        &-medium {
+            max-width: var(--is-medium);
+        }
+    }
+}
