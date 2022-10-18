@@ -1,0 +1,32 @@
+@use "../01_settings/breakpoint" as *;
+.c-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    @include desktop {
+        width: $desktop;
+    }
+    &-address {
+        align-self: flex-start;
+        padding: 1rem;
+        & address {
+            font-style: normal;
+        }
+    }
+    &-direitos {
+        border-top: 1px solid;
+        bottom: 0;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding: 1rem;
+        position: absolute;
+        width: 95%;
+        @include desktop {
+            width: $desktop;
+        }
+    }
+}

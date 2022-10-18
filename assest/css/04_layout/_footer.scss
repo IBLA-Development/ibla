@@ -1,0 +1,22 @@
+.l-footer {
+    align-items: center;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // Sizes
+    &.-h {
+        &-medium {
+            min-height: 50vh;
+        }
+        &-large {
+            min-height: 75vh;
+        }
+        &-full {
+            min-height: 100vh;
+        }
+    }
+    &.-bg-grey {
+        background-image: url("../image/bg-container/grey-bg-1500x1000.jpg");
+    }
+}
