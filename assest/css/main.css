@@ -898,7 +898,7 @@ sub {
   height: 150px;
 }
 
-.c-card__description, .c-card {
+.c-card-home__description, .c-card-home {
   background-color: var(--color-grey-2);
   color: var(--color-text-primary);
   display: flex;
@@ -906,16 +906,16 @@ sub {
   margin: 0 auto;
 }
 
-.c-card {
+.c-card-home {
   align-items: center;
   margin: 0.5rem 0;
   max-width: var(--is-medium);
 }
-.c-card__image {
+.c-card-home__image {
   padding: var(--space-2xs);
   overflow: hidden;
 }
-.c-card__date {
+.c-card-home__date {
   max-height: 172.5px;
   padding: var(--space-2xs);
   text-align: center;
@@ -923,31 +923,31 @@ sub {
   flex-direction: column;
   justify-content: space-between;
 }
-.c-card__date__day {
+.c-card-home__date__day {
   display: flex;
   max-height: 100px;
   max-block-size: var(--step-5);
   align-items: center;
   justify-content: center;
 }
-.c-card__date__month {
+.c-card-home__date__month {
   max-height: 50px;
   display: flex;
   max-block-size: var(--step-4);
 }
-.c-card__description {
+.c-card-home__description {
   flex-direction: column;
   padding: var(--space-2xs);
   max-width: 500px;
 }
-.c-card__action {
+.c-card-home__action {
   padding: var(--space-2xs);
 }
 @media screen and (max-width: 1023px) {
-  .c-card {
+  .c-card-home {
     flex-direction: column;
   }
-  .c-card__description {
+  .c-card-home__description {
     text-align: center;
     justify-content: center;
   }
