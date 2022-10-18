@@ -3,5 +3,10 @@
 }
 
 .u-padding-lr-s {
-    padding: 0 var(--space-s);
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+}
+
+.u-left {
+    align-items: flex-start;
 }

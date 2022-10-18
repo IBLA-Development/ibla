@@ -631,6 +631,26 @@ sub {
   position: fixed;
 }
 
+.l-footer {
+  align-items: center;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.l-footer.-h-medium {
+  min-height: 50vh;
+}
+.l-footer.-h-large {
+  min-height: 75vh;
+}
+.l-footer.-h-full {
+  min-height: 100vh;
+}
+.l-footer.-bg-grey {
+  background-image: url("../image/bg-container/grey-bg-1500x1000.jpg");
+}
+
 .l-section {
   position: relative;
   background-color: var(--color-black);
@@ -810,7 +830,11 @@ sub {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  padding: 75px 25px;
+}
+
+.c-section-container {
+  padding-bottom: var(--space-2xl);
+  padding-top: var(--space-2xl);
 }
 .c-section-container.-w-medium {
   max-width: var(--is-medium);
@@ -956,6 +980,65 @@ sub {
   }
 }
 
+.c-iframe {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100vw;
+  margin: var(--space-s) 0 var(--space-s) 0;
+}
+.c-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media screen and (min-width: 1023px) {
+  .c-iframe {
+    width: 75vw;
+  }
+}
+
+.c-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .c-footer {
+    width: 1024px;
+  }
+}
+.c-footer-address {
+  align-self: flex-start;
+  padding: 1rem;
+}
+.c-footer-address address {
+  font-style: normal;
+}
+.c-footer-direitos {
+  border-top: 1px solid;
+  bottom: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding: 1rem;
+  position: absolute;
+  width: 95%;
+}
+@media screen and (min-width: 1024px) {
+  .c-footer-direitos {
+    width: 1024px;
+  }
+}
+
 .l-content.l-content--bg-1 {
   background-image: url("../../image/bg-container/grey-bg-1500x1000.jpg");
 }
@@ -979,4 +1062,13 @@ sub {
 
 .u-padding-s {
   padding: var(--space-s);
+}
+
+.u-padding-lr-s {
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+}
+
+.u-left {
+  align-items: flex-start;
 }/*# sourceMappingURL=main.css.map */
