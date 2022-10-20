@@ -1,18 +1,15 @@
+@use "../01_settings/breakpoint" as size;
 %c-scope-section {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    max-width: size.$widescreen;
 }
 
 .c-section {
-    @extend %c-sccope-section;
+    @extend %c-scope-section;
     padding-bottom: var(--space-2xl);
     padding-top: var(--space-2xl);
-    &.-w {
-        &-medium {
-            max-width: var(--is-medium);
-        }
-    }
 }

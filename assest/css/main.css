@@ -657,6 +657,7 @@ sub {
   --_vh: var(--vh-full);
 }
 .-bg-light.l-footer, .-bg-light.l-section {
+  color: var(--color-text-primary);
   --_bg: var(--color-grey-1);
 }
 
@@ -815,20 +816,18 @@ sub {
   flex-direction: row;
 }
 
-.c-section-container {
+.c-section {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
-.c-section-container {
+.c-section {
   padding-bottom: var(--space-2xl);
   padding-top: var(--space-2xl);
-}
-.c-section-container.-w-medium {
-  max-width: var(--is-medium);
 }
 
 .c-box {
@@ -951,6 +950,98 @@ sub {
     text-align: center;
     justify-content: center;
   }
+}
+
+.c-card-event {
+  --_bg-color: var(--color-white);
+  --_card-padding: var(--space-2xs);
+  --_card-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  --_text-color: var(--color-text-primary);
+  border-radius: var(--radius-large);
+  box-shadow: var(--_card-shadow);
+  color: var(--_text-color);
+  height: 540px;
+  overflow: hidden;
+  width: 100%;
+}
+.c-card-event:hover {
+  --_card-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.c-card-event > a {
+  color: var(--_text-color);
+  text-decoration: none;
+}
+.c-card-event__image {
+  height: 300px;
+}
+.c-card-event__image img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-card-event__description {
+  --_line-height: var(--space-3xs);
+  background-color: var(--_bg-color);
+  height: 200px;
+  padding: var(--_card-padding);
+}
+.c-card-event__description > * {
+  padding-bottom: var(--_line-height);
+  padding-top: var(--_line-height);
+}
+.c-card-event__tag {
+  align-items: center;
+  background-color: var(--_bg-color);
+  display: flex;
+  height: 40px;
+}
+.c-card-event__tag__text {
+  --_text-color: var(--color-text-tertiary);
+  background-color: var(--_bg-color);
+  border-radius: var(--radius-large);
+  color: var(--_text-color);
+  font-size: var(--step--1);
+  margin-left: var(--space-2xs);
+  margin-right: var(--space-2xs);
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.c-card-event__tag__text.-open {
+  --_bg-color: green;
+}
+.c-card-event__tag__text.-open::after {
+  content: "Inscrições Abertas";
+}
+.c-card-event__tag__text.-closed {
+  --_bg-color: var(--color-red);
+}
+.c-card-event__tag__text.-closed::after {
+  content: "Encerrado";
+}
+
+.c-grid {
+  --_col: 1;
+  --_padding: var(--space-2xs);
+  display: grid;
+  grid-template-columns: repeat(var(--_col), 1fr);
+  max-width: var(--is-medium);
+}
+
+@media screen and (min-width: 769px) {
+  .c-grid {
+    --_col: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-grid {
+    --_col: 3;
+  }
+}
+.c-grid__item {
+  padding: var(--space-2xs);
 }
 
 .c-button {

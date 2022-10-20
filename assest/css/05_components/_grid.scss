@@ -1,0 +1,23 @@
+@use "../01_settings/breakpoint" as *;
+%c-scope-grid {
+    // Local Variables
+    --_col: 1;
+    --_padding: var(--space-2xs);
+    // Atributes
+    display: grid;
+    grid-template-columns: repeat(var(--_col), 1fr);
+    max-width: var(--is-medium);
+}
+
+.c-grid {
+    @extend %c-scope-grid;
+    @include tablet {
+        --_col: 2;
+    }
+    @include desktop {
+        --_col: 3;
+    }
+    &__item {
+        padding: var(--space-2xs);
+    }
+}

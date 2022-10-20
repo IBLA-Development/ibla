@@ -25,6 +25,7 @@
     }
     // Backgrunds
     &.-bg-light {
+        color: var(--color-text-primary);
         --_bg: var(--color-grey-1);
     }
 }
