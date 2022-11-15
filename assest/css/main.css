@@ -638,7 +638,6 @@ sub {
 .l-footer, .l-section {
   --_bg: var(--color-black);
   --_vh: var(--vh-medium);
-  align-items: center;
   background: var(--_bg);
   display: flex;
   min-height: var(--_vh);
@@ -1022,6 +1021,13 @@ sub {
   content: "Encerrado";
 }
 
+.c-banner-event {
+  position: absolute;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .c-grid {
   --_col: 1;
   --_padding: var(--space-2xs);
@@ -1145,10 +1151,39 @@ sub {
 .u-padding-s {
   padding: var(--space-s);
 }
-
-.u-padding-lr-s {
+.u-padding-s-lr {
   padding-left: var(--space-s);
   padding-right: var(--space-s);
+}
+.u-padding-s-tb {
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+}
+.u-padding-m {
+  padding: var(--space-m);
+}
+.u-padding-m-tb {
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+}
+.u-padding-l {
+  padding: var(--space-l);
+}
+.u-padding-l-tb {
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
+.u-margin-s {
+  margin: var(--space-s);
+}
+.u-margin-s-lr {
+  margin-left: var(--space-s);
+  margin-right: var(--space-s);
+}
+.u-margin-s-tb {
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
 }
 
 .u-left {
