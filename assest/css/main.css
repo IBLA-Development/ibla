@@ -830,16 +830,20 @@ sub {
 }
 
 .c-box {
+  --_color: var(--color-white);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   border-radius: var(--radius-large);
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--_color);
   margin: var(--space-xs);
   padding: 75px 25px;
   text-align: center;
+}
+.c-box.-black {
+  --_color: var(--color-black);
 }
 
 .title-6, .title-5, .title-4, .title-3, .title-2, .title, .title-1 {
@@ -1172,6 +1176,9 @@ sub {
 .u-padding-l-tb {
   padding-top: var(--space-l);
   padding-bottom: var(--space-l);
+}
+.u-padding-l-t {
+  padding-top: var(--space-l);
 }
 
 .u-margin-s {
