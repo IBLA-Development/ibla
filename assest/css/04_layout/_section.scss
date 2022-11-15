@@ -1,48 +1,56 @@
-.l-section {
-    position: relative;
-    background-color: var(--color-black);
+%scope-section {
+    // Local Variables
+    --_bg: var(--color-black);
+    --_vh: var(--vh-medium);
+    // Atributes
+    // align-items: center;
+    background: var(--_bg);
     display: flex;
-    align-items: center;
+    min-height: var(--_vh);
+    position: relative;
+    // Sizes
+    &.-h {
+        &-small {
+            --_vh: var(--vh-small);
+        }
+        &-medium {
+            --_vh: var(--vh-medium);
+        }
+        &-large {
+            --_vh: var(--vh-large);
+        }
+        &-full {
+            --_vh: var(--vh-full);
+        }
+    }
+    // Backgrunds
+    &.-bg-light {
+        color: var(--color-text-primary);
+        --_bg: var(--color-grey-1);
+    }
+}
+
+.l-section {
+    @extend %scope-section;
     // Parallax
     &.-parallax {
+        --_opacity: 0.5;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 0;
         &::before {
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, var(--_opacity)) 10%);
             content: '';
-            position: absolute;
-            width: 100%;
             height: 100%;
+            position: absolute;
             top: 0;
-            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5) 10%);
+            width: 100%;
             z-index: -1;
         }
         &.-parallax-no-gradient-top::before {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, var(--_opacity));
         }
-    }
-    // Sizes
-    &.-h {
-        &-medium {
-            min-height: 50vh;
-        }
-        &-large {
-            min-height: 75vh;
-        }
-        &-full {
-            min-height: 100vh;
-        }
-    }
-    // Backgrunds
-    &.-bg-1 {
-        background-image: url("../image/bg-parallax/image-3.jpg");
-    }
-    &.-bg-2 {
-        background-image: url("../image/bg-parallax/image-5.jpg");
-    }
-    &.-bg-grey {
-        background-image: url("../image/bg-container/grey-bg-1500x1000.jpg");
     }
 }

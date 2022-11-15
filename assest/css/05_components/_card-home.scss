@@ -1,4 +1,4 @@
-%c-card {
+%c-card-home {
     background-color: var(--color-grey-2);
     color: var(--color-text-primary);
     display: flex;
@@ -6,8 +6,8 @@
     margin: 0 auto;
 }
 
-.c-card {
-    @extend %c-card;
+.c-card-home {
+    @extend %c-card-home;
     align-items: center;
     margin: 0.5rem 0;
     max-width: var(--is-medium);
@@ -36,7 +36,7 @@
         }
     }
     &__description {
-        @extend %c-card;
+        @extend %c-card-home;
         flex-direction: column;
         padding: var(--space-2xs);
         max-width: 500px;

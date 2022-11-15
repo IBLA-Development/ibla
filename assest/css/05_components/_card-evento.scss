@@ -1,0 +1,73 @@
+.c-card-event {
+    // Local Variables
+    --_bg-color: var(--color-white);
+    --_card-padding: var(--space-2xs);
+    --_card-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --_text-color: var(--color-text-primary);
+    // Atributes
+    border-radius: var(--radius-large);
+    box-shadow: var(--_card-shadow);
+    color: var(--_text-color);
+    height: 540px;
+    overflow: hidden;
+    width: 100%;
+    &:hover {
+        --_card-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &>a {
+        color: var(--_text-color);
+        text-decoration: none;
+    }
+    &__image {
+        height: 300px;
+        & img {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    &__description {
+        // Local Variables
+        --_line-height: var(--space-3xs);
+        // Atributes
+        background-color: var(--_bg-color);
+        height: 200px;
+        padding: var(--_card-padding);
+        &>* {
+            padding-bottom: var(--_line-height);
+            padding-top: var(--_line-height);
+        }
+    }
+    &__tag {
+        // Atributes
+        align-items: center;
+        background-color: var(--_bg-color);
+        display: flex;
+        height: 40px;
+        &__text {
+            // Local Variables
+            --_text-color: var(--color-text-tertiary);
+            // Atributes
+            background-color: var(--_bg-color);
+            border-radius: var(--radius-large);
+            color: var(--_text-color);
+            font-size: var(--step--1);
+            margin-left: var(--space-2xs);
+            margin-right: var(--space-2xs);
+            padding-left: var(--space-xs);
+            padding-right: var(--space-xs);
+            width: fit-content;
+            &.-open {
+                --_bg-color: green;
+                &::after {
+                    content: "Inscrições Abertas"
+                }
+            }
+            &.-closed {
+                --_bg-color: var(--color-red);
+                &::after {
+                    content: "Encerrado"
+                }
+            }
+        }
+    }
+}
