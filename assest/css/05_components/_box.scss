@@ -1,12 +1,18 @@
 .c-box {
+    // Local Variables
+    --_color: var(--color-white);
+    // Atributes
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     border-radius: var(--radius-large);
-    border: 1px solid var(--color-white);
+    border: 1px solid var(--_color);
     margin: var(--space-xs);
     padding: 75px 25px;
     text-align: center;
+    &.-black {
+        --_color: var(--color-black);
+    }
 }
